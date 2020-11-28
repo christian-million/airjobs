@@ -1,0 +1,25 @@
+<html>
+    <head>
+    <title>New AIR Job Posting</title>
+    </head>
+
+    <body>
+
+        <h1>New Opportunities</h1>
+
+        <p>Good morning, Christian! Looks like a new job or two have been posted to the <a href="https://www.airweb.org/resources/job-board">AIR Job Board</a>.</p>
+        <ul>
+            {% for job in jobs %}
+            <li><a href='{{job[1]}}'>{{job[0]}}</a> in {{job[3]}}</li>
+            <ul>
+                <li>Institution: {{job[2]}}</li>
+                <li>Salary: {{job[4]}}</li>
+                <li>Due: <b>{{job[5]}}</b></li>
+            </ul>
+            {% endfor %}
+
+        </ul>
+        <p>Best,<br>Yourself</p>
+
+    </body>
+</html>

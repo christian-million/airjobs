@@ -1,0 +1,15 @@
+Good morning, Christian!
+
+Looks like a new job or two have been posted to the AIR Job Board (https://www.airweb.org/resources/job-board).
+
+{% for job in jobs %}
+{{job[0].upper()}} in {{job[3]}}
+    - Link: {{job[1]}}
+    - Institution: {{job[2]}}
+    - Salary: {{job[4]}}
+    - Due: {{job[5]}}
+
+{% endfor %}
+
+Best,
+Yourself
